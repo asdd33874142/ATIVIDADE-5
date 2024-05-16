@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Declaração das variáveis para armazenar os valores
+    float valor1, valor2;
+
+    // Solicitar ao usuário que insira os dois valores
+    cout << "Digite o primeiro valor: ";
+    cin >> valor1;
+    cout << "Digite o segundo valor: ";
+    cin >> valor2;
+
+    // Verificar se o segundo valor é zero para evitar uma divisão por zero
+    if (valor2 == 0) {
+        cout << "Erro: Divisao por zero nao e permitida!" << endl;
+    } else {
+        // Calcular e exibir a divisão do primeiro valor pelo segundo
+        float divisao = valor1 / valor2;
+        cout << "A divisao de " << valor1 << " por " << valor2 << " e: " << divisao << endl;
+    }
+
+    return 0;
+}
